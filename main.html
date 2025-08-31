@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <form method="post" action="https://www.hashemian.com/tools/form-post-tester.php/ras">
+        <label for="name">Name</label>
 
+        <input type="text" required id="name"  placeholder="Name">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" required id="email" placeholder="Email">
+        <br>
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" required id="gender_m" value="gender_m" name="gender">
+            <label for="gender_m"> Male</label>
+            <br>
+            <input type="radio" required id="gender_f" value="gender_f" name="gender">
+            <label for="gender_f">Female</label>
+        </fieldset>
+        <br>
+        <select name="cars" id="cars" required>
+            <option value="">--Please choose an option--</option>
+            <option value="Maruti">Maruti</option>
+            <option value="Honda">Honda</option>
+            <option value="Toyata">Toyata</option>
+            <option value="BMW">BMW</option>
+            <option value="Hyundai">Hyundai</option>
+        </select>
+        <br>
+        <input type="number" required id="age" name="age">
+        <br>
+        <input type="date" required id="dob" name="DOB">
+        <br>
+        <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+        <br>
+        <input type="password" required id="password" name="password" placeholder="Password">
+        <br>
+        <input type="checkbox" required id="tos" name="tos">
+        I agree to the TOS
+        <br>
+        <input type="submit" value="Submit Now" name="submit">
+    </form>
 </body>
 
 </html>
